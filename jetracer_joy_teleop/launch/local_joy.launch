@@ -1,0 +1,10 @@
+<launch>
+
+    <include file="$(find jetracer_joy_teleop)/launch/teleop.launch" />
+
+    <node name="joy" respawn="true" pkg="joy" type="joy_node">
+        <param name="dev" type="string" value="/dev/input/js0"/>
+        <param name="deadzone" value="0.03"/>
+    </node>
+
+</launch>
