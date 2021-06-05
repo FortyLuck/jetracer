@@ -8,7 +8,7 @@ CAR = NvidiaRacecar()
 
 
 def callback(data):
-    CAR.steering = float(-1 * data.axes[0])
+    CAR.steering = float(data.axes[0])
     CAR.throttle = float(data.axes[1])
 
 
